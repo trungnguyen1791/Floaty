@@ -959,7 +959,7 @@ open class Floaty: UIView {
   }
 
   fileprivate func isTouched(_ touches: Set<UITouch>) -> Bool {
-    return touches.count == 1 && touches.first?.tapCount == 1 && touches.first?.location(in: self) != nil
+    return touches.count == 1 && touches.first?.location(in: self) != nil
   }
   
   open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
